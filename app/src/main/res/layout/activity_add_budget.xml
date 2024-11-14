@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".UI.AddBudget">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45sp"
+        android:gravity="center"
+        android:text="CREAR PRESUPUESTO"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtATitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="35sp"
+        android:ems="10"
+        android:hint="Título del presupuesto"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/edtAMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="35sp"
+        android:ems="10"
+        android:hint="Monto presupuesto"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnGuardarPresupuesto"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="20sp"
+        android:backgroundTint="@android:color/white"
+        android:outlineProvider="none"
+        android:text="Guardar"
+        android:textColor="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="25sp"
+        android:layout_marginStart="65dp"/>
+
+</LinearLayout>
